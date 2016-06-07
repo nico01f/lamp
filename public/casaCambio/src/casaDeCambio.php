@@ -1,15 +1,15 @@
 <?php
-require_once 'divisas.php';
+require_once ('divisas.php');
 class casaDeCambio {
   private $_moneda;
-  public list($dolar, $euro) = obtienDivisa();
+  public list($dolar, $euro) = obtieneDivisa();
 
   public function __construct() {
     $this->_monedas = array
     (
     "peso"=>array("venta"=>1.2, "compra"=>1),
-    "dolar"=>array("venta"=>1.6, "compra"=>$dolar),
-    "euro"=>array("venta"=>1.7, "compra"=>$euro)
+    "dolar"=>array("venta"=>1.6, "compra"=>$this->dolar),
+    "euro"=>array("venta"=>1.7, "compra"=>$this->euro)
   );
 }
 
