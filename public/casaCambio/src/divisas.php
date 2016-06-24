@@ -1,5 +1,5 @@
 <?php
-function obtieneDivisa() {
+function obtieneDivisas() {
   $xmlSource = "http://indicadoresdeldia.cl/webservice/indicadores.xml";
   $xml = simplexml_load_file($xmlSource);
   $dolar =  substr($xml->moneda->dolar, 1,3);

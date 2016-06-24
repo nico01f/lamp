@@ -5,6 +5,7 @@ class casaDeCambio {
   public list($dolar, $euro) = obtieneDivisa();
 
   public function __construct() {
+    
     $this->_monedas = array
     (
     "peso"=>array("venta"=>1.2, "compra"=>1),
